@@ -1,15 +1,6 @@
-local Library = loadstring(game:GetObjects("rbxassetid://7657867786")[1].Source)()
-local Subs = Library.subs 
-local IsOpen = Subs.Wait
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Mikee Hub", "my dick")
 
-local Core = Library:CreateWindow({
-    Name = "Mikee Hub",
-    Themeable = {
-        Info = {"Mikee Hub"},
-        Credit = true,
-        Background = "",
-        Visible = true
-    }
 })
 
 -- Rest of the original script remains identical below this point
